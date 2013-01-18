@@ -27,13 +27,13 @@
 USB Usb;
 BTD Btd(&Usb); // You have to create the Bluetooth Dongle instance like so
 /* You can create the instance of the class in two ways */
-WII Wii(&Btd,PAIR); // This will start an inquiry and then pair with your Wiimote - you only have to do this once
-//WII Wii(&Btd); // After that you can simply create the instance like so and then press any button on the Wiimote
+//WII Wii(&Btd,PAIR); // This will start an inquiry and then pair with your Wiimote - you only have to do this once
+WII Wii(&Btd); // After that you can simply create the instance like so and then press any button on the Wiimote
 
-//#define DEBUG
-//#define DEBUG_Y
-//#define EXTRADEBUG_X_Y
-//#define RAWVALUES
+#define DEBUG
+#define DEBUG_Y
+#define EXTRADEBUG_X_Y
+#define RAWVALUES
 
 
 /**Y threshhold and miscellaneous values. Thess values are used to change the linear distance away from the cart at which it activates**/
