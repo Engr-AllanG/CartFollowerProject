@@ -434,4 +434,4 @@ void disableIR()
   digitalWrite(IR_TRANSISTOR_L, LOW);
 }
 
-Testing Notepad++ editing/commit/github compatability
+
